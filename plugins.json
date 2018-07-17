@@ -1,0 +1,9 @@
+{
+  "plugins": [
+    {
+      "repo": "mohw-gen-phys-eco",
+      "name": "mohw-gen-phys-eco"
+    } 
+  ]
+}
+ 
