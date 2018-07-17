@@ -13,10 +13,10 @@
             { "text": "Mississippi Freshwater Network", "url": "http://maps.freshwaternetwork.org/mississippi/" }
     ],
     "initialExtent": [
-        -74.927,
-        38.896,
-        -74.632,
-        41.364
+        -102.5,
+        43.2,
+        -102.5,
+        47.2
     ],
     "basemaps": [
         { "name": "Streets"            , "url": "http://server.arcgisonline.com/ArcGIS/rest/services/World_Street_Map/MapServer" },
