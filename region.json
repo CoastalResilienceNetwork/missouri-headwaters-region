@@ -29,6 +29,7 @@
         { "name": "Terrain"            , "url": "http://server.arcgisonline.com/ArcGIS/rest/services/World_Terrain_Base/MapServer" }
     ],
     "pluginOrder": [
+        "physical-eco-info",
         "zoom_to",
         "measure",
         "legend_display",
