@@ -1,8 +1,8 @@
 {
   "plugins": [
     {
-      "repo": "mohw-gen-phys-eco",
-      "name": "mohw-gen-phys-eco"
+      "repo": "physical-eco-info",
+      "name": "physical-eco-info"
     } 
   ]
 }
