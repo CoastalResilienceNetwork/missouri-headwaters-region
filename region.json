@@ -29,7 +29,6 @@
         "measure",
         "legend_display",
         "full_extent"
-    
     ],
     "print": {
        "printServerUrl": "http://services.coastalresilience.org:6080/arcgis/rest/services/Utilities/PrintingTools/GPServer/Export%20Web%20Map%20Task",
