@@ -5,7 +5,7 @@
     "titleDetail": { "text": "Hawaii", "url": "" },
     "singlePluginMode": {
         "active": true,
-        "pluginFolderName": "ecological-effects-slc"
+        "pluginFolderName": "physical-eco-info"
     },
     "headerLinks": [
         { "text": "The Nature Conservancy", "url": "http://nature.org/marine/" },
@@ -45,7 +45,7 @@
         "plugins"
     ],
     "pluginOrder": [
-	    "ecological-effects-slc"
+	    "physical-eco-info"
     ],
     "print": {
        "printServerUrl": "http://services.coastalresilience.org:6080/arcgis/rest/services/Utilities/PrintingTools/GPServer/Export%20Web%20Map%20Task",
