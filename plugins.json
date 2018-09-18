@@ -1,9 +1,8 @@
 {
   "plugins": [
-    {
-      "repo": "physical-eco-info",
-      "name": "physical-eco-info"
-    } 
+      {
+          "repo": "ecological-effects-slc",
+          "name": "ecological-effects-slc"
+      }
   ]
 }
- 
