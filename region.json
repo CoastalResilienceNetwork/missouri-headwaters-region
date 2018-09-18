@@ -1,22 +1,8 @@
 {
     "googleAnalyticsPropertyId": "7401895-16",
     "googleUrlShortenerApiKey": "AIzaSyDO_xBd3griGKuhlYBvv7jVN4Mt58Gl4iw",
-<<<<<<< HEAD
-<<<<<<< HEAD
-    "titleMain": { "text": "Ecosystem Effects of Sea Level Change", "url": "http://maps.coastalresilience.org/hawaii" },
-    "titleDetail": { "text": "Hawaii", "url": "" },
-=======
     "titleMain": { "text": "Missouri Headwaters", "url": "http://maps.coastalresilience.org" },
     "titleDetail": { "text": "Riparian and Rangeland Tool", "url": "" },
->>>>>>> parent of 0d88397... updates
-    "singlePluginMode": {
-        "active": true,
-        "pluginFolderName": "physical-eco-info"
-    },
-=======
-    "titleMain": { "text": "Missouri Headwaters", "url": "http://maps.coastalresilience.org/newjersey" },
-    "titleDetail": { "text": "Riparian and Rangeland Tool", "url": "" },
->>>>>>> parent of 47957dc... single app mode
     "headerLinks": [
         { "text": "The Nature Conservancy", "url": "http://nature.org/marine/" },
         { "text": "Terms of Use", "url": "http://migratoryblueways.org/terms-of-use" }
@@ -35,28 +21,7 @@
     "basemaps": [
         { "name": "Streets"            , "url": "http://server.arcgisonline.com/ArcGIS/rest/services/World_Street_Map/MapServer" },
         { "name": "Topographic"        , "url": "http://server.arcgisonline.com/ArcGIS/rest/services/World_Topo_Map/MapServer" },
-<<<<<<< HEAD
-<<<<<<< HEAD
-        { "name": "Basic"              , "url": "http://services.arcgisonline.com/ArcGIS/rest/services/Canvas/World_Light_Gray_Base/MapServer" },
-        { "name": "Basic Dark Gray"    , "url": "http://server.arcgisonline.com/arcgis/rest/services/Canvas/World_Dark_Gray_Base/MapServer"},
-        { "name": "National Geographic", "url": "http://server.arcgisonline.com/ArcGIS/rest/services/NatGeo_World_Map/MapServer" },
-        { "name": "Ocean"              , "url": "http://server.arcgisonline.com/ArcGIS/rest/services/Ocean_Basemap/MapServer" },
-        { "name": "Shaded Relief"      , "url": "http://server.arcgisonline.com/ArcGIS/rest/services/World_Shaded_Relief/MapServer" },
-        { "name": "Terrain"            , "url": "http://server.arcgisonline.com/ArcGIS/rest/services/World_Terrain_Base/MapServer" }
-=======
         { "name": "Imagery"            , "url": "http://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer" }
->>>>>>> parent of 0d88397... updates
-    ],
-    "pluginFolders": [
-        "plugins"
-=======
-        { "name": "National Geographic", "url": "http://server.arcgisonline.com/ArcGIS/rest/services/NatGeo_World_Map/MapServer" },
-        { "name": "Ocean"              , "url": "http://server.arcgisonline.com/ArcGIS/rest/services/Ocean_Basemap/MapServer" },
-        { "name": "Imagery"            , "url": "http://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer" },
-        { "name": "Physical"           , "url": "http://server.arcgisonline.com/ArcGIS/rest/services/World_Physical_Map/MapServer" },
-        { "name": "Shaded Relief"      , "url": "http://server.arcgisonline.com/ArcGIS/rest/services/World_Shaded_Relief/MapServer" },
-        { "name": "Terrain"            , "url": "http://server.arcgisonline.com/ArcGIS/rest/services/World_Terrain_Base/MapServer" }
->>>>>>> parent of 47957dc... single app mode
     ],
     "pluginOrder": [
         "physical-eco-info",
@@ -77,23 +42,10 @@
         "tertiary": "#dac792",
         "active": "#0096d6"
     },
-<<<<<<< HEAD
-<<<<<<< HEAD
-   "identifyBlacklist": ["OBJECTID", "OBJECTID_1", "SHAPE", "Shape", "shape_Length", "shape_Area", "NumScen"]
-}
-
-
-
-=======
     "identifyBlacklist": ["OBJECTID", "OBJECTID_1", "SHAPE", "Shape", "shape_Length", "shape_Area", "NumScen"],
-    "identifyEnabled": true,
+    "identifyEnabled": false,
     "launchpad": {
             "html": true
     }
 }
->>>>>>> parent of 47957dc... single app mode
-=======
-    "identifyBlacklist": ["OBJECTID", "OBJECTID_1", "SHAPE", "Shape", "shape_Length", "shape_Area", "NumScen"],
-    "identifyEnabled": false
-}
->>>>>>> parent of 0d88397... updates
+
