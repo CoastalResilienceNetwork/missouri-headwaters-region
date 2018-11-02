@@ -5,7 +5,7 @@
     "titleDetail": { "text": "", "url": "" },
     "singlePluginMode": {
         "active": true,
-        "pluginFolderName": "physical-eco-info"
+        "pluginFolderName": "missouri-headwaters"
     },
     "headerLinks": [
         { "text": "The Nature Conservancy", "url": "http://nature.org/marine/" },

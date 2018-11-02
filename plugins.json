@@ -1,8 +1,8 @@
 {
   "plugins": [
       {
-          "repo": "physical-eco-info",
-          "name": "physical-eco-info"
+          "repo": "missouri-headwaters",
+          "name": "missouri-headwaters"
       }
   ]
 }
