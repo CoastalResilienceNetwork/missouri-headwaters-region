@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+	<title>Resilient Coastal Cities | Coastal Resilience</title>
+	<link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+	<!-- Story map css -->
+	<link rel="stylesheet" href="css/storyMap.css">
+	<link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+  <link rel="stylesheet" type="text/css" href="">
+	<!-- jquery code -->
+	<script src="https://code.jquery.com/jquery-3.2.1.js"></script>
+	<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+</head>
+  <body>
+    <!-- preload images used for the map -->
+    <img src="images/map1_v4.jpg" style="display:none;" alt="" />
+    <img src="images/map2_v4.jpg" style="display:none;" alt="" />
+    <img src="images/map3_v4.jpg" style="display:none;" alt="" />
+    <img src="images/map4_v4.jpg" style="display:none;" alt="" />
+    <img src="images/map5_v4.jpg" style="display:none;" alt="" />
+    <img src="images/mobile_map1.jpg" style="display:none;" alt="" />
+    <img src="images/mobile_map2.jpg" style="display:none;" alt="" />
+    <img src="images/mobile_map3.jpg" style="display:none;" alt="" />
+    <img src="images/mobile_map4.jpg" style="display:none;" alt="" />
+    <img src="images/mobile_map5.jpg" style="display:none;" alt="" />
+
+
+  	<div class="sm-mainPanel">
+  		<!-- <img class="sm-mainPanelImg" id="mainImage" src="images/indo_1.jpg"> -->
+  		<div class="sm-mainPanelLogo">
+  			<img src="images/nature.png">
+  			<img style="margin-left: 10px;" src="images/redCrossLogo.png">
+  		</div>
+  		<div class="sm-skipToMap"><a href="#mapPanel">Skip to Mapping Application</a></div>
+  		<div class="sm-mainPanelHeader" style="text-shadow: 3px 2px black;">RESILIENT COASTAL CITIES</div>
+      <div class="sm-scrollInvite"><img src="images/scroll-invite.png"></div>
+  	</div>
+  	<div class="sm-mainPanelContentWrapper sm-bottomGap">
+		
+  		<div class="sm-textStyle sm-mainPanelText">
+  			In 2015 the Global Disaster Preparedness Center began a city coalition-building project across Southeast Asia with local Red Cross Societies to build tools to help problem solve around specific hazards. 
+  		</div>
+  	</div>
+    <div class="sm-staticMapDiv sm-img1 sm-bottomGap">
+      <div class="sm-staticMapDivText sm-text1">
+        The Nature Conservancy is partnering with the Preparedness Center and the Red Cross Society in Indonesia to identify climate adaptation solutions that increase the resilience of communities from flooding.
+      </div>
+      <div class="sm-staticMapDivText sm-text2">
+        Mangroves can reduce as much as 66% of wave height, easing coastal erosion and flood risk.
+      </div>
+      <div class="sm-staticMapDivText sm-text3">
+        Natural barriers save money by reducing the impacts of storms and flooding to people and critical infrastructure.
+      </div>
+      <div class="sm-staticMapDivText sm-text4">
+        Coastal ecosystems are valuable for mitigating flood risk, supporting environmental, development and humanitarian goals.
+      </div>
+    </div>
+
+  	<div class="sm-image2Wrapper sm-bottomGap">
+      <video controls="true"  autoplay="true" poster="images/moviePosterImage.jpg" loop="true" preload="auto" class="videot" id="videoMain" height="90%" width="100%" preload>
+        <source src="images/Mangrove_v4.mp4" type="video/mp4" >
+      </video>
+  	</div>
+  	
+  	<div class="sm-image2Wrapper sm-bottomGap" >
+  		<img id="thirdImage" class="sm-img3" src="images/indo_2.jpg">
+  	</div>
+  	<div class="sm-bottomGap">
+  		<div class="sm-textStyle">
+	  		This app is designed to support local coalition planning for the Red Cross Society and city of Semarang and make informed decisions around nature-based adaptation solutions as a critical component of disaster risk reduction.<br>
+	  		<!-- <span><a class="sm-exploreAppLink" style="text-decoration: none;" href="#mapPanel">Explore the app now!</a></span> -->
+	  	</div>
+  	</div>
+  	<div id="mapPanel">
+      <div class="sm-appPanelCover" id="appPanelCover"><div class="sm-appPanelCoverText">Scroll to the Bottom to use Mapping Application.</div></div>
+      <div class="sm-appScrollIconWrapper" style="display: none;">
+        <!-- <img class="sm-appScrollIcon" style="height: 30px;" src="images/scroll-invite.png"><br> -->
+        <div class="sm-backToTopText">Back to Top</div>
+      </div>
+  		<embed id="embedDoc" style="width: 100%; height: 100%; " src="appSource/"></embed>
+  	</div>
+  	<script src="js/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,242 @@
+/* Story Map CSS /////////////////////////////////*/
+/* Overall styling */
+/* main styles ///////////////////////////////////////////////////////////////////*/
+/* all app styles */
+html, body{
+	height:100%; padding:0; margin:0; background-color: white; font-family: 'open_sans'; /*margin-top: -3px;*/ /*overflow-x: hidden;*/
+}
+
+a:visited { 
+    color: blue;
+}
+.sm-bottomGap{
+	margin-bottom: 20px;
+}
+.sm-textStyle{
+	font-size: 20px; color: black; opacity: .9; width: 75%; margin: auto; text-align: center;
+}
+.sm-quoteWrapper{
+	display: flex; justify-content: center;
+}
+.sm-quote{
+	font-weight: bold; font-style: italic; opacity: 1; display: flex; justify-content: center;
+}
+
+
+/* panel styles */
+.sm-mainPanel{
+	height: 100%; width: 100%; display: flex; justify-content: center; 
+	background: url("../images/Indo_1.jpg") no-repeat center center fixed; background-size: cover; background-position: top;
+}
+.sm-mainPanel img{
+	width: 100%; height: 100%;
+}
+.sm-mainPanelContentWrapper{
+	position: absolute; width: 100%; top: 60%; display: flex; justify-content: center;
+}
+.sm-mainPanelHeader{
+	font-size: 7vw; top: 45%; position: absolute; color: white; width: 100%; display: flex; 
+	justify-content: center; 
+}
+.sm-mainPanelText{
+	position: relative; width: 90%; color: white; display: flex; justify-content: center; 
+}
+.sm-mainPanelLogo{
+	position: absolute; top: 10px; left: 10px; display: flex;
+}
+.sm-mainPanelLogo img{
+	padding: 10px; height: 45px; width: 140px; background-color: rgba(255,255,255,.7); border-radius:  20px;
+}
+.sm-skipToMap{
+	position: absolute; top: 10px; right: 10px; font-size: 20px; border-radius: 15px; padding: 10px; background-color: rgba(255,255,255,.7);
+}
+.sm-skipToMap a{
+	text-decoration: none;
+}
+.sm-skipToMap:hover{
+	color: orange; cursor: pointer;
+}
+.sm-scrollInvite{
+	height: 50px; width: 100px; position: absolute; bottom: 25px;
+}
+.sm-image2Wrapper{
+	/*height: 500px;*/
+}
+.sm-image2Wrapper img{
+	width: auto; height: auto; display: flex; justify-content: center; max-width: 1200px; margin: auto;
+}
+#mapPanel{
+	height: 100%; width: 100%;
+}
+.sm-staticMapDiv{
+	height: 3000px; opacity: .4
+}
+
+.sm-img1{
+	background: url("../images/map1_v4.jpg") no-repeat center center fixed; transition: opacity 1.5s ease-in-out; background-size: cover;
+}
+.sm-img2{
+	background: url("../images/map2_v4.jpg") no-repeat center center fixed; 
+	transition: opacity 1s ease-in-out; background-size: cover;
+}
+.sm-img3{
+	background: url("../images/map3_v4.jpg") no-repeat center center fixed; transition: opacity 1s ease-in-out; background-size: cover;
+}
+.sm-img4{
+	background: url("../images/map4_v4.jpg") no-repeat center center fixed; transition: opacity 1s ease-in-out; background-size: cover;
+}
+.sm-img5{
+	background: url("../images/map5_v4.jpg") no-repeat center center fixed; transition: opacity 1s ease-in-out; background-size: cover;
+}
+.sm-staticMapDivText{
+	background: rgba(0,0,0,.3); position: relative; color: white; width: 30%; margin-left: 5%; 
+	padding: 10px; border-radius: 10px; font-size: 22px; transition: opacity .3s ease-in-out;
+}
+.sm-text1{
+	top: 400px;
+}
+.sm-text2{
+	top: 1000px;
+}
+.sm-text3{
+	top: 1600px;
+}
+.sm-text4{
+	top: 2000px;
+}
+.sm-appPanelCover{
+	height: 100%; width: 100%; z-index: 1000; position: absolute; 
+	background-color: rgba(255,255,255,0.7); display: flex; justify-content: center;
+}
+.sm-appPanelCoverText {
+    margin-top: 10%;
+    color: black;
+    font-size: 40px;
+    opacity: 1;
+    width: 80%;
+    display: flex; justify-content: center; text-align: center;
+}
+.sm-appScrollIconWrapper{
+	position: absolute; left: 48%; margin-top: 8px; border-radius: 10px; 
+}
+.sm-appScrollIconWrapper:hover{
+	cursor: pointer; background-color: rgba(255,255,255,0.3); 
+}
+.sm-appScrollIcon{
+	transform: rotate(180deg); padding-top: 2px;
+}
+/*.sm-appScrollIcon:hover{
+	cursor: pointer;
+}*/
+.sm-backToTopText{
+	font-size: 23px; color: white; padding: 8px;
+}
+/* media queries ///////////////*/
+/* screen size 600px or below*/
+@media screen and (max-width: 700px) {
+	body:before {
+	  content: "";
+	  display: block;
+	  position: fixed;
+	  left: 0;
+	  top: 0;
+	  width: 100%;
+	  height: 100%;
+	  z-index: -10;
+	  background: url("imgaes/map1_v4.jpg") no-repeat center center;
+	  -webkit-background-size: cover;
+	  -moz-background-size: cover;
+	  -o-background-size: cover;
+	  background-size: cover;
+	}
+	.sm-textStyle{
+		font-size: 20px; color: black; opacity: .7; width: 90%; margin: auto; text-align: center;
+	}
+	.sm-skipToMap{
+		top: 90px; right: initial;
+	}
+	.sm-mainPanelLogo{
+		display: flex; justify-content: center; width: 100%; left: 0px;
+	}
+	.sm-mainPanel{
+		background-size: cover;
+	}
+	.sm-mainPanel .sm-mainPanelImg{
+		height: 250px;
+	}
+	.sm-mainPanelText{
+		color: white; margin-top: 15px;
+	}
+	/*.sm-mainPanelContentWrapper{
+		color: white;
+	}*/
+	.sm-mainPanelHeader{
+		top: 45%; color: white;
+	}
+	.sm-image2Wrapper{
+		height: 250px;
+	}
+	.sm-image2Wrapper img{
+		height: 250px; width: 90%;
+	}
+	/*.sm-img2, .sm-img3{
+		height: 250px !important;
+	}*/
+	.sm-skipToMap a{
+		text-decoration: none; background: rgba(255,255,255,0.7); padding: 5px; border-radius: 10px;
+	}
+	.sm-appPanelCoverText{
+		text-align: center; font-size: 25px;
+	}
+	.sm-appPanelCover{
+		background-color: rgba(255,255,255,.8);
+	}
+	.sm-image2Wrapper video{
+		height: 250px;
+	}
+	.sm-staticMapDiv{
+		opacity: 1; background-color: rgba(0,0,0,.1);
+	}
+	.sm-staticMapDivText{
+		font-size: 17px; width: 40%; opacity: 1;
+	}
+	.sm-img1{
+		background: url("../images/mobile_map1.jpg") no-repeat center center fixed; transition: opacity 1.5s ease-in-out; background-size: cover; background-attachment: fixed;
+	}
+	.sm-img2{
+		background: url("../images/mobile_map2.jpg") no-repeat center center fixed; 
+		transition: opacity 1s ease-in-out; background-size: cover; background-attachment: fixed;
+	}
+	.sm-img3{
+		background: url("../images/mobile_map3.jpg") no-repeat center center fixed; transition: opacity 1s ease-in-out; background-size: cover; background-attachment: fixed;
+	}
+	.sm-img4{
+		background: url("../images/mobile_map4.jpg") no-repeat center center fixed; transition: opacity 1s ease-in-out; background-size: cover; background-attachment: fixed;
+	}
+	.sm-img5{
+		background: url("../images/mobile_map5.jpg") no-repeat center center fixed; transition: opacity 1s ease-in-out; background-size: cover; background-attachment: fixed;
+	}
+}
+@media screen and (min-width: 1200px) {
+	.sm-mainPanelHeader{
+		font-size: 72px;
+	}
+}
+/* media query for taller screens*/
+@media screen and (min-height: 650px) {
+	/*.sm-mainPanelHeader{
+		color: blue; top: 25%;
+	}*/
+	/*.sm-mainPanel img{
+		height: 81%;
+	}
+	.sm-mainPanel{
+		height: 81%;*/
+	}
+	/*.sm-mainPanelContentWrapper{
+		top: 37%;
+	}*/
+}
+
+
+
