@@ -3,7 +3,8 @@
 /* main styles ///////////////////////////////////////////////////////////////////*/
 /* all app styles */
 html, body{
-	height:100%; padding:0; margin:0; background-color: white; font-family: 'open_sans'; /*margin-top: -3px;*/ /*overflow-x: hidden;*/
+	height:100%; padding:0; margin:0; background-color: white; color: #5d6165;
+	font-family: colfax, -apple-system, BlinkMacSystemFont, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, Arial, sans-serif;
 }
 
 a:visited { 
@@ -13,33 +14,28 @@ a:visited {
 	margin-bottom: 20px;
 }
 .sm-textStyle{
-	font-size: 20px; color: black; opacity: .9; width: 75%; margin: auto; text-align: center;
+	font-size: 20px; color: black; width: 75%; margin: auto; text-align: center;
 }
-.sm-quoteWrapper{
-	display: flex; justify-content: center;
+#toMap{
+	cursor:pointer;
 }
-.sm-quote{
-	font-weight: bold; font-style: italic; opacity: 1; display: flex; justify-content: center;
-}
-
-
 /* panel styles */
 .sm-mainPanel{
 	height: 100%; width: 100%; display: flex; justify-content: center; 
-	background: url("../images/Indo_1.jpg") no-repeat center center fixed; background-size: cover; background-position: top;
+	background: url("../images/picture1.jpg") no-repeat center center fixed; background-size: cover; background-position: center top;
 }
 .sm-mainPanel img{
 	width: 100%; height: 100%;
 }
 .sm-mainPanelContentWrapper{
-	position: absolute; width: 100%; top: 60%; display: flex; justify-content: center;
+	position: absolute; width: 100%; top: 30%; display: flex; justify-content: center;
 }
 .sm-mainPanelHeader{
-	font-size: 7vw; top: 45%; position: absolute; color: white; width: 100%; display: flex; 
-	justify-content: center; 
+	font-size: 3em; top: 2%; position: absolute; width: 50%; display: flex; 
+	justify-content: center; text-align:center; 
 }
 .sm-mainPanelText{
-	position: relative; width: 90%; color: white; display: flex; justify-content: center; 
+	position: relative; width: 90%; color: white; display: flex; justify-content: center; text-shadow: 1px 1px black; 
 }
 .sm-mainPanelLogo{
 	position: absolute; top: 10px; left: 10px; display: flex;
@@ -47,46 +43,11 @@ a:visited {
 .sm-mainPanelLogo img{
 	padding: 10px; height: 45px; width: 140px; background-color: rgba(255,255,255,.7); border-radius:  20px;
 }
-.sm-skipToMap{
-	position: absolute; top: 10px; right: 10px; font-size: 20px; border-radius: 15px; padding: 10px; background-color: rgba(255,255,255,.7);
-}
-.sm-skipToMap a{
-	text-decoration: none;
-}
-.sm-skipToMap:hover{
-	color: orange; cursor: pointer;
-}
 .sm-scrollInvite{
 	height: 50px; width: 100px; position: absolute; bottom: 25px;
 }
-.sm-image2Wrapper{
-	/*height: 500px;*/
-}
-.sm-image2Wrapper img{
-	width: auto; height: auto; display: flex; justify-content: center; max-width: 1200px; margin: auto;
-}
 #mapPanel{
 	height: 100%; width: 100%;
-}
-.sm-staticMapDiv{
-	height: 3000px; opacity: .4
-}
-
-.sm-img1{
-	background: url("../images/map1_v4.jpg") no-repeat center center fixed; transition: opacity 1.5s ease-in-out; background-size: cover;
-}
-.sm-img2{
-	background: url("../images/map2_v4.jpg") no-repeat center center fixed; 
-	transition: opacity 1s ease-in-out; background-size: cover;
-}
-.sm-img3{
-	background: url("../images/map3_v4.jpg") no-repeat center center fixed; transition: opacity 1s ease-in-out; background-size: cover;
-}
-.sm-img4{
-	background: url("../images/map4_v4.jpg") no-repeat center center fixed; transition: opacity 1s ease-in-out; background-size: cover;
-}
-.sm-img5{
-	background: url("../images/map5_v4.jpg") no-repeat center center fixed; transition: opacity 1s ease-in-out; background-size: cover;
 }
 .sm-staticMapDivText{
 	background: rgba(0,0,0,.3); position: relative; color: white; width: 30%; margin-left: 5%; 
@@ -117,7 +78,7 @@ a:visited {
     display: flex; justify-content: center; text-align: center;
 }
 .sm-appScrollIconWrapper{
-	position: absolute; left: 48%; margin-top: 8px; border-radius: 10px; 
+	position: absolute; left: 50%; margin-top: 15px; border-radius: 10px; 
 }
 .sm-appScrollIconWrapper:hover{
 	cursor: pointer; background-color: rgba(255,255,255,0.3); 
@@ -129,11 +90,12 @@ a:visited {
 	cursor: pointer;
 }*/
 .sm-backToTopText{
-	font-size: 23px; color: white; padding: 8px;
+	font-size: 13px; color: white; font-weight: 500;
+    -webkit-font-smoothing: antialiased; padding:6px;
 }
 /* media queries ///////////////*/
 /* screen size 600px or below*/
-@media screen and (max-width: 700px) {
+@media only screen and (max-width:900px) {
 	body:before {
 	  content: "";
 	  display: block;
@@ -143,47 +105,15 @@ a:visited {
 	  width: 100%;
 	  height: 100%;
 	  z-index: -10;
-	  background: url("imgaes/map1_v4.jpg") no-repeat center center;
-	  -webkit-background-size: cover;
-	  -moz-background-size: cover;
-	  -o-background-size: cover;
-	  background-size: cover;
 	}
 	.sm-textStyle{
-		font-size: 20px; color: black; opacity: .7; width: 90%; margin: auto; text-align: center;
-	}
-	.sm-skipToMap{
-		top: 90px; right: initial;
+		font-size: 15px; width: 95%; margin: auto; text-align: center;
 	}
 	.sm-mainPanelLogo{
-		display: flex; justify-content: center; width: 100%; left: 0px;
-	}
-	.sm-mainPanel{
-		background-size: cover;
-	}
-	.sm-mainPanel .sm-mainPanelImg{
-		height: 250px;
+		display: none;
 	}
 	.sm-mainPanelText{
-		color: white; margin-top: 15px;
-	}
-	/*.sm-mainPanelContentWrapper{
-		color: white;
-	}*/
-	.sm-mainPanelHeader{
-		top: 45%; color: white;
-	}
-	.sm-image2Wrapper{
-		height: 250px;
-	}
-	.sm-image2Wrapper img{
-		height: 250px; width: 90%;
-	}
-	/*.sm-img2, .sm-img3{
-		height: 250px !important;
-	}*/
-	.sm-skipToMap a{
-		text-decoration: none; background: rgba(255,255,255,0.7); padding: 5px; border-radius: 10px;
+		margin-top: 15px;
 	}
 	.sm-appPanelCoverText{
 		text-align: center; font-size: 25px;
@@ -191,36 +121,22 @@ a:visited {
 	.sm-appPanelCover{
 		background-color: rgba(255,255,255,.8);
 	}
-	.sm-image2Wrapper video{
-		height: 250px;
+	.sm-mainPanel{
+	height: 100%; width: 100%; display: flex; justify-content: center; 
+	background: url("../images/picture2.jpg") no-repeat center center fixed; 
+	background-size: cover; background-position: center;
 	}
-	.sm-staticMapDiv{
-		opacity: 1; background-color: rgba(0,0,0,.1);
+	.sm-mainPanelHeader{
+		font-size: 1em; color:black; text-shadow:1pt 1pt #fff; font-weight:900; width: 100%;
 	}
-	.sm-staticMapDivText{
-		font-size: 17px; width: 40%; opacity: 1;
-	}
-	.sm-img1{
-		background: url("../images/mobile_map1.jpg") no-repeat center center fixed; transition: opacity 1.5s ease-in-out; background-size: cover; background-attachment: fixed;
-	}
-	.sm-img2{
-		background: url("../images/mobile_map2.jpg") no-repeat center center fixed; 
-		transition: opacity 1s ease-in-out; background-size: cover; background-attachment: fixed;
-	}
-	.sm-img3{
-		background: url("../images/mobile_map3.jpg") no-repeat center center fixed; transition: opacity 1s ease-in-out; background-size: cover; background-attachment: fixed;
-	}
-	.sm-img4{
-		background: url("../images/mobile_map4.jpg") no-repeat center center fixed; transition: opacity 1s ease-in-out; background-size: cover; background-attachment: fixed;
-	}
-	.sm-img5{
-		background: url("../images/mobile_map5.jpg") no-repeat center center fixed; transition: opacity 1s ease-in-out; background-size: cover; background-attachment: fixed;
+	.sm-mainPanelContentWrapper	{
+		top:15%;
 	}
 }
 @media screen and (min-width: 1200px) {
-	.sm-mainPanelHeader{
-		font-size: 72px;
-	}
+	/*.sm-mainPanelHeader{
+		font-size: 38px;
+	}*/
 }
 /* media query for taller screens*/
 @media screen and (min-height: 650px) {
