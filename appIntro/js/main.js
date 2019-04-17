@@ -1,4 +1,4 @@
-//  main js file for indonesia story mode ////////////////////////////////////////////
+//  main js file for appIntro ////////////////////////////////////////////
 $( document ).ready(function() {
 	// on scroll to a certain point remove the cover over the web mapping application to allow it to be used
     $(window).scroll(function() {
