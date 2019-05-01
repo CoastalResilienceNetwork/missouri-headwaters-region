@@ -3,27 +3,72 @@
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
 	<title>Missouri Headwaters</title>
-	<link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+	<link rel="icon" type="image/x-icon" href="images/favicon.ico" />
 	<!-- Story map css -->
 	<link rel="stylesheet" href="css/storyMap.css">
 	<!-- jquery code -->
 	<script src="https://code.jquery.com/jquery-3.2.1.js"></script>
 </head>
   <body>
+    <!-- preload images used for the map -->
+    <img src="images/mainImage.jpg" style="display:none;" alt="" />
+    <img src="images/picture1.png" style="display:none;" alt="" />
+    <img src="images/picture2.png" style="display:none;" alt="" />
+    <img src="images/picture3.png" style="display:none;" alt="" />
+    
     <div class="sm-mainPanel">
   		<div class="sm-mainPanelLogo">
   			<img src="images/nature.png">
   		</div>
-  		<div class="sm-mainPanelHeader">Missouri Headwaters Riparian and Rangeland Tool</div>
+  		<div class="sm-mainPanelHeader">Missouri Headwaters Riparian and Rangeland Tool
+      </div>
       <div id="toMap" class="sm-scrollInvite">
         <img src="images/scroll-invite.png">
       </div>
+      <div class="sm-mainPanelContentWrapper">
+        <div class="sm-textStyle sm-mainPanelText">
+          WEB-BASED SUPPORT FOR COLLABORATION AND CONSERVATION SUCCESS AT LANDSCAPE SCALE 
+        </div>
+      </div>
+       <div class="sm-nfwf_logo">
+          <img src="images/nfwf_conoco_logo.png">
+      </div>
   	</div>
-  	<div class="sm-mainPanelContentWrapper sm-bottomGap">
-  		<div class="sm-textStyle sm-mainPanelText">
-  			Welcome! This mapping platform and decision support tool is designed to support rangeland and riparian health management in the Little Missouri River and adjacent headwaters within SD, ND, WY, and MT. Riparian areas are among the most critical habitats within the Northern Great Plains, providing essential habitat for a wide range of grassland birds and wildlife. Riparian areas are also essential for the success of ranchers that depend on them for water and forage for livestock, especially during dry periods. The Nature Conservancy in SD, working with partners and experts, compiled spatial data and information regarding landscape characteristics and condition, and developed that information into this online web mapping platform intended to assist conservation partners in the landscape with targeting conservation measures to provide the most benefits at scale. 
-  		</div>
-  	</div>
+
+    <!-- static image panels, change the image in JavaScript -->
+    <div class="sm-staticImagePanel">
+       <div id="picture1" class="sm-floatingTextBox sm-floatingTextBox-1">
+         <div class="sm-innerTextBox">
+           <span>Riparian systems, the green belts between the water and the uplands,are like veins on the prairie.
+             Composing less than 2% of the landscape, they support 80% of life. The resilience of these systems is
+             critical
+             to the health and diversity of the grasslands as a whole.</span>
+         </div>
+       </div>
+       <div id="picture2"  class="sm-floatingTextBox sm-floatingTextBox-2">
+         <div class="sm-innerTextBox">
+           <span><strong>A healthy riparian zone provides</strong> </span>
+           <ul>
+             <li>High-quality forage for livestock.</li>
+             <li>Critical water resource for working lands.</li>
+             <li>Corridors for wildlife movement.</li>
+             <li>Resiliency during drought and flood events.</li>
+             <li>Vegetation to stabilize banks and keep water cool.</li>
+           </ul>
+         </div>
+       </div>
+       <div id="picture3"  class="sm-floatingTextBox sm-floatingTextBox-3">
+         <div class="sm-innerTextBox">
+           <span>
+             <strong>Because these critical resources cross public and private land,
+            they require us to work collaboratively.</strong> 
+            <br>
+          This tool is a resource for us to work together at watershed scale.
+        </span>
+         </div>
+       </div>
+    </div>
+   
   	<div id="mapPanel">
       <div class="sm-appPanelCover" id="appPanelCover">
         <div class="sm-appPanelCoverText">Scroll to the Bottom to use Mapping Application.</div>

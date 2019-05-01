@@ -2,157 +2,268 @@
 /* Overall styling */
 /* main styles ///////////////////////////////////////////////////////////////////*/
 /* all app styles */
-html, body{
-	height:100%; padding:0; margin:0; background-color: white; color: #5d6165;
+html,
+body {
+	height: 100%;
+	padding: 0;
+	margin: 0;
+	background-color: white;
+	color: #5d6165;
 	font-family: colfax, -apple-system, BlinkMacSystemFont, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, Arial, sans-serif;
 }
 
-a:visited { 
-    color: blue;
+a:visited {
+	color: blue;
 }
-.sm-bottomGap{
+
+.sm-bottomGap {
 	margin-bottom: 20px;
 }
-.sm-textStyle{
-	font-size: 20px; color: black; width: 75%; margin: auto; text-align: center;
+
+.sm-textStyle {
+	font-size: 20px;
+	color: black;
+	width: 75%;
+	text-align: center;
 }
-#toMap{
-	cursor:pointer;
-}
-/* panel styles */
-.sm-mainPanel{
-	height: 100%; width: 100%; display: flex; justify-content: center; 
-	background: url("../images/picture1.jpg") no-repeat center center fixed; background-size: cover; background-position: center top;
-}
-.sm-mainPanel img{
-	width: 100%; height: 100%;
-}
-.sm-mainPanelContentWrapper{
-	position: absolute; width: 100%; top: 30%; display: flex; justify-content: center;
-}
-.sm-mainPanelHeader{
-	font-size: 3em; top: 2%; position: absolute; width: 50%; display: flex; 
-	justify-content: center; text-align:center; 
-}
-.sm-mainPanelText{
-	position: relative; width: 90%; color: white; display: flex; justify-content: center; text-shadow: 1px 1px black; 
-}
-.sm-mainPanelLogo{
-	position: absolute; top: 10px; left: 10px; display: flex;
-}
-.sm-mainPanelLogo img{
-	padding: 10px; height: 45px; width: 140px; background-color: rgba(255,255,255,.7); border-radius:  20px;
-}
-.sm-scrollInvite{
-	height: 50px; width: 100px; position: absolute; bottom: 25px;
-}
-#mapPanel{
-	height: 100%; width: 100%;
-}
-.sm-staticMapDivText{
-	background: rgba(0,0,0,.3); position: relative; color: white; width: 30%; margin-left: 5%; 
-	padding: 10px; border-radius: 10px; font-size: 22px; transition: opacity .3s ease-in-out;
-}
-.sm-text1{
-	top: 400px;
-}
-.sm-text2{
-	top: 1000px;
-}
-.sm-text3{
-	top: 1600px;
-}
-.sm-text4{
-	top: 2000px;
-}
-.sm-appPanelCover{
-	height: 100%; width: 100%; z-index: 1000; position: absolute; 
-	background-color: rgba(255,255,255,0.7); display: flex; justify-content: center;
-}
-.sm-appPanelCoverText {
-    margin-top: 10%;
-    color: black;
-    font-size: 40px;
-    opacity: 1;
-    width: 80%;
-    display: flex; justify-content: center; text-align: center;
-}
-.sm-appScrollIconWrapper{
-	position: absolute; left: 50%; margin-top: 15px; border-radius: 10px; 
-}
-.sm-appScrollIconWrapper:hover{
-	cursor: pointer; background-color: rgba(255,255,255,0.3); 
-}
-.sm-appScrollIcon{
-	transform: rotate(180deg); padding-top: 2px;
-}
-/*.sm-appScrollIcon:hover{
+
+#toMap {
 	cursor: pointer;
-}*/
-.sm-backToTopText{
-	font-size: 13px; color: white; font-weight: 500;
-    -webkit-font-smoothing: antialiased; padding:6px;
 }
+
+/* main panel styles */
+.sm-mainPanel {
+	height: 100%;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	background: url("../images/mainImage.jpg") no-repeat center center fixed;
+	background-size: cover;
+	background-position: center top;
+}
+
+.sm-mainPanel img {
+	width: 100%;
+	height: 100%;
+}
+
+.sm-mainPanelContentWrapper {
+	position: absolute;
+	width: 70%;
+	top: 40%;
+	display: flex;
+	justify-content: center;
+	padding: 10px 0;
+	background-color: rgba(0, 0, 0, .7);
+}
+
+.sm-mainPanelHeader {
+	font-size: 2em;
+	top: 5%;
+	color: black;
+	position: absolute;
+	width: 50%;
+	display: flex;
+	justify-content: center;
+	text-align: center;
+}
+
+.sm-mainPanelText {
+	position: relative;
+	color: white;
+	display: flex;
+	justify-content: center;
+	text-shadow: 1px 1px black;
+}
+
+.sm-mainPanelLogo {
+	position: absolute;
+	top: 10px;
+	left: 10px;
+	display: flex;
+}
+
+.sm-mainPanelLogo img {
+	padding: 10px;
+	height: 45px;
+	width: 140px;
+	background-color: rgba(255, 255, 255, .7);
+	border-radius: 20px;
+}
+
+.sm-nfwf_logo {
+	position: absolute;
+	top: 65%;
+	width: 100%;
+	text-align: center;
+}
+
+.sm-nfwf_logo img {
+	height: 80px;
+	width: 300px;
+}
+
+.sm-scrollInvite {
+	height: 50px;
+	width: 100px;
+	position: absolute;
+	bottom: 25px;
+}
+
+#mapPanel {
+	height: 100%;
+	width: 100%;
+}
+
+/* image panels with scrolling text */
+
+.sm-staticImagePanel {
+	background: url(../images/picture1.png) no-repeat center center fixed;
+	transition: background .2s linear;
+	background-size: cover;
+	width: 100%;
+	height: 100%;
+}
+
+.sm-floatingTextBox {
+	position: relative;
+	z-index: 1000;
+	color: white;
+	font-size: calc(8px + 1vw);
+	width: 100%;
+	text-shadow: 1px 1px black;
+	line-height: 1.8;
+	box-sizing: border-box;
+
+}
+
+.sm-floatingTextBox-1 div {
+	width: 65%;
+	padding: 10px;
+	text-align: center;
+	margin: auto;
+}
+.sm-floatingTextBox-2 div {
+	width: 45%;
+	padding: 10px;
+	text-align: left;
+	margin: auto;
+	max-width: 500px;
+}
+.sm-floatingTextBox-3 div {
+	width: 65%;
+	padding: 10px;
+	text-align: center;
+	margin: auto;
+}
+.sm-innerTextBox {
+	background-color: rgba(0, 0, 0, .7);
+}
+
+/* map panel cover and application styling */
+.sm-appPanelCover {
+	height: 100%;
+	width: 100%;
+	z-index: 1000;
+	position: absolute;
+	background-color: rgba(255, 255, 255, 0.8);
+	display: flex;
+	justify-content: center;
+}
+
+.sm-appPanelCoverText {
+	margin-top: 10%;
+	color: black;
+	font-size: 40px;
+	opacity: 1;
+	width: 80%;
+	display: flex;
+	justify-content: center;
+	text-align: center;
+}
+
+.sm-appScrollIconWrapper {
+	position: absolute;
+	left: 50%;
+	margin-top: 15px;
+	border-radius: 10px;
+}
+
+.sm-appScrollIconWrapper:hover {
+	cursor: pointer;
+	background-color: rgba(255, 255, 255, 0.3);
+}
+
+.sm-appScrollIcon {
+	transform: rotate(180deg);
+	padding-top: 2px;
+}
+
+.sm-backToTopText {
+	font-size: 13px;
+	color: white;
+	font-weight: 500;
+	-webkit-font-smoothing: antialiased;
+	padding: 6px;
+}
+
+#mapPanel {
+	position: absolute;
+}
+
 /* media queries ///////////////*/
-/* screen size 600px or below*/
+/* screen size 900px or below*/
 @media only screen and (max-width:900px) {
-	body:before {
-	  content: "";
-	  display: block;
-	  position: fixed;
-	  left: 0;
-	  top: 0;
-	  width: 100%;
-	  height: 100%;
-	  z-index: -10;
+	.sm-textStyle {
+		font-size: 1em;
+		width: 95%;
 	}
-	.sm-textStyle{
-		font-size: 15px; width: 95%; margin: auto; text-align: center;
+
+	.sm-mainPanelLogo {
+		/*display: none;*/
+		position: unset;
 	}
-	.sm-mainPanelLogo{
-		display: none;
+
+	.sm-appPanelCoverText {
+		font-size: 25px;
 	}
-	.sm-mainPanelText{
-		margin-top: 15px;
+
+	.sm-mainPanelHeader {
+		font-size: 1.3em;
+		color: black;
+		text-shadow: 1pt 1pt #fff;
+		font-weight: 900;
+		width: 90%;
+		top: 15%;
 	}
-	.sm-appPanelCoverText{
-		text-align: center; font-size: 25px;
+
+	.sm-mainPanelContentWrapper {
+		top: 40%;
 	}
-	.sm-appPanelCover{
-		background-color: rgba(255,255,255,.8);
-	}
-	.sm-mainPanel{
-	height: 100%; width: 100%; display: flex; justify-content: center; 
-	background: url("../images/picture2.jpg") no-repeat center center fixed; 
-	background-size: cover; background-position: center;
-	}
-	.sm-mainPanelHeader{
-		font-size: 1em; color:black; text-shadow:1pt 1pt #fff; font-weight:900; width: 100%;
-	}
-	.sm-mainPanelContentWrapper	{
-		top:15%;
+
+	.sm-nfwf_logo img {
+		height: 50px;
+		width: 200px;
 	}
 }
-@media screen and (min-width: 1200px) {
-	/*.sm-mainPanelHeader{
-		font-size: 38px;
-	}*/
-}
-/* media query for taller screens*/
-@media screen and (min-height: 650px) {
-	/*.sm-mainPanelHeader{
-		color: blue; top: 25%;
-	}*/
-	/*.sm-mainPanel img{
-		height: 81%;
+
+/* for screens larger than 1200px */
+@media only screen and (min-width:1200px) {
+	.sm-floatingTextBox {
+		font-size: 20px;
 	}
-	.sm-mainPanel{
-		height: 81%;*/
-	}
-	/*.sm-mainPanelContentWrapper{
-		top: 37%;
-	}*/
 }
 
+/* for screens smaller than 600px; */
+@media only screen and (max-width:600px) {
+	.sm-floatingTextBox {
+		font-size: 14px;
+	}
 
-
+	.sm-floatingTextBox-1 div {
+		width: 85%;
+	}
+	.sm-floatingTextBox-2 div {
+		width: 85%;
+	}
+}
