@@ -23,7 +23,6 @@ a:visited {
 .sm-textStyle {
 	font-size: 20px;
 	color: black;
-	width: 75%;
 	text-align: center;
 }
 
@@ -33,6 +32,7 @@ a:visited {
 
 /* main panel styles */
 .sm-mainPanel {
+	position: relative;
 	height: 100%;
 	width: 100%;
 	display: flex;
@@ -40,6 +40,7 @@ a:visited {
 	background: url("../images/mainImage.jpg") no-repeat center center fixed;
 	background-size: cover;
 	background-position: center top;
+	z-index: 100;
 }
 
 .sm-mainPanel img {
@@ -58,14 +59,16 @@ a:visited {
 }
 
 .sm-mainPanelHeader {
-	font-size: 2em;
+	font-size: 2.2em;
 	top: 5%;
 	color: black;
 	position: absolute;
-	width: 50%;
+	width: 65%;
 	display: flex;
 	justify-content: center;
 	text-align: center;
+	font-weight: bold;
+	font-family: 'Times New Roman', Times, serif;
 }
 
 .sm-mainPanelText {
@@ -102,7 +105,21 @@ a:visited {
 	height: 80px;
 	width: 300px;
 }
-
+.sm-mainPhotoCredit{
+	position: absolute;
+	bottom: 5px;
+	right: 5px;
+	color: lightgray;
+	font-size: 11px;
+}
+.sm-subPhotoCredit{
+	position: fixed;
+	bottom: 5px;
+	right: 5px;
+	color: lightgray;
+	font-size: 11px;
+	z-index: 99;
+}
 .sm-scrollInvite {
 	height: 50px;
 	width: 100px;
@@ -209,6 +226,7 @@ a:visited {
 
 #mapPanel {
 	position: absolute;
+	z-index: 999;
 }
 
 /* media queries ///////////////*/
@@ -229,7 +247,7 @@ a:visited {
 	}
 
 	.sm-mainPanelHeader {
-		font-size: 1.3em;
+		font-size: 1.6em;
 		color: black;
 		text-shadow: 1pt 1pt #fff;
 		font-weight: 900;

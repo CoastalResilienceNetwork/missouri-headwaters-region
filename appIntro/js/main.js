@@ -93,7 +93,18 @@ $( document ).ready(function() {
     picImage = "picture" + picNum + ".png"
     if (bgImage != picImage) {
       $('.sm-staticImagePanel').css('background-image', "url(" + window.location.href + 'images/' + picImage + ")")
+       // change text in photo credit
+       const textArray = ['PHOTO © KRISTEN BLANN/TNC', 'PHOTO © AMI VITALE/TNC', 'PHOTO © KRISTEN BLANN/TNC']
+       if(picImage == "picture1.png"){
+          $('.sm-subPhotoCredit').html(textArray[0])
+       } else if (picImage == "picture2.png") {
+          $('.sm-subPhotoCredit').html(textArray[1])
+       } else if (picImage == "picture3.png") {
+          $('.sm-subPhotoCredit').html(textArray[2])
+       }
     }
+
+   
   }
   function isElementInViewport(el) {
     el = el[0];
