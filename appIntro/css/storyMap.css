@@ -102,8 +102,8 @@ a:visited {
 }
 
 .sm-nfwf_logo img {
-	height: 80px;
-	width: 300px;
+	height: 100px;
+	width: 350px;
 }
 .sm-mainPhotoCredit{
 	position: absolute;
@@ -260,8 +260,8 @@ a:visited {
 	}
 
 	.sm-nfwf_logo img {
-		height: 50px;
-		width: 200px;
+		height: 80px;
+		width: 300px;
 	}
 }
 
@@ -283,5 +283,9 @@ a:visited {
 	}
 	.sm-floatingTextBox-2 div {
 		width: 85%;
+	}
+	.sm-nfwf_logo img {
+		height: 65px;
+		width: 250px;
 	}
 }
